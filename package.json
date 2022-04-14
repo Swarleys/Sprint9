@@ -6,9 +6,13 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "latest"
+    "@headlessui/vue": "^1.5.0",
+    "@heroicons/vue": "^1.0.6",
+    "@nuxtjs/tailwindcss": "^5.0.2",
+    "@pinia/nuxt": "^0.1.8",
+    "nuxt3": "3.0.0-27470397.9ebea90"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^5.0.2"
+    "pinia": "^2.0.13"
   }
 }

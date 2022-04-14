@@ -1,4 +1,15 @@
+<script setup>
+import NavBar from '../components/NavBar.vue';
+import Footer from '../components/Footer.vue';
+</script>
+
 <template>
-    <h2>Some shared layout content:</h2>
-    <slot />
+	<section>
+		<NavBar />
+		<slot/>
+		<Footer/>
+	</section>
 </template>
+
+<style>
+</style>
