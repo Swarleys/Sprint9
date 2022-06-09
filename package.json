@@ -1,18 +1,22 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@headlessui/vue": "^1.5.0",
+    "@headlessui/vue": "^1.6.4",
     "@heroicons/vue": "^1.0.6",
-    "@nuxtjs/tailwindcss": "^5.0.2",
-    "@pinia/nuxt": "^0.1.8",
-    "nuxt3": "3.0.0-27470397.9ebea90"
+    "@nuxtjs/tailwindcss": "^5.1.2",
+    "@pinia/nuxt": "^0.1.9",
+    "nuxt": "^3.0.0-rc.3"
   },
   "dependencies": {
-    "pinia": "^2.0.13"
+    "pinia": "^2.0.14"
+  },
+  "resolutions": {
+    "ufo": "^0.8.4"
   }
 }
