@@ -37,9 +37,6 @@ const addUser = () => {
                 confirmPassword.value = "";
                 router.push('/calcular');
             }
-            
-                
-            // router.push('/starships');
         }
     } else {
         console.log('There are errors, fix them.');

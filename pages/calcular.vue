@@ -14,8 +14,6 @@ const listOfCosts = ref([] as number[]);
 const total = computed(() => listOfCosts.value.reduce((a: number, b: number): number => a + b, 0));
 
 const addCostDevice = (price: number): void => {
-  console.log(price);
-  
   listOfCosts.value.push(price);
 }
 
