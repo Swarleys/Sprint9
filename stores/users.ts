@@ -1,7 +1,7 @@
 import { Users } from "../interfaces/interfaces";
 import { defineStore } from "pinia";
 
-export const useUsers = defineStore('users', {//cambiar nombre a la store
+export const useUsers = defineStore('users', {
     state: () => ({
         users: [] as Users[],
         isLogged: false,
@@ -14,7 +14,6 @@ export const useUsers = defineStore('users', {//cambiar nombre a la store
                 if (this.passwordLogIn === userExists.password) {
                     console.log(`Correct user, welcome back ${userExists.firstName}`);
                     this.isLogged = true;
-                    // router.push('/starships');
                     this.resetLogIn()
                 } else {
                     console.log("Introduce un usuario valido.");
@@ -25,7 +24,6 @@ export const useUsers = defineStore('users', {//cambiar nombre a la store
         },
         logOut() {
             this.isLogged = false;
-            // router.push('/');
         },
     }
 })
