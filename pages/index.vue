@@ -5,7 +5,9 @@ import { useElectricityPrice } from '../stores/electricityPrice';
 
 const storePrices = useElectricityPrice();
 
-await storePrices.getElectricityPrices();
+if (storePrices.electricityPrices.length === 0) {
+    await storePrices.getElectricityPrices();
+}
 
 let userHour = new Date().getHours();
 let userMinutes = new Date().getMinutes();

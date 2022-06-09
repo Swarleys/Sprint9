@@ -1,22 +1,9 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
-const buildModules = [
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-];
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    buildModules,
-    publicRuntimeConfig: {
-        secret: process.env.API_URL
-    }
+    buildModules: [
+        '@nuxtjs/tailwindcss',
+        '@pinia/nuxt',
+    ],
 })
-
-
-
-// export default {
-//     buildModules: [
-//         '@nuxtjs/tailwindcss',
-//         '@pinia/nuxt',
-//     ],
-// }
