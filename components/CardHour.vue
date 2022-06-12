@@ -4,7 +4,7 @@ const storePrices = useElectricityPrice();
 </script>
 
 <template>
-	<section class="m-6 sm:m-auto md:min-w-[700px] lg:max-w-[976px]">
+	<section class="sm:m-auto md:min-w-[700px] lg:max-w-[976px]">
 		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 sm:mx-6">
 			<div
 				class="px-4 py-2 max-w-s bg-white rounded-xl shadow-xl overflow-hidden flex flex-row items-center justify-center flex-grow"

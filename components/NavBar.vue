@@ -54,7 +54,8 @@ const storeUsers = useUsers();
                   Iniciar sesión</NuxtLink>
                 </MenuItem>
                 <MenuItem v-slot="{ active }">
-                <NuxtLink to="#" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']" @click="() => { storeUsers.isLogged = false }">Salir
+                <NuxtLink to="#" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']"
+                  @click="() => { storeUsers.isLogged = false }">Salir
                 </NuxtLink>
                 </MenuItem>
               </MenuItems>
@@ -74,17 +75,23 @@ const storeUsers = useUsers();
     </div>
 
     <DisclosurePanel class="sm:hidden">
-      <div class="pt-2 pb-3 space-y-1">
+      <div class="pt-2 pb-3 space-y-1 flex flex-col">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-        <NuxtLink to="/"
-          class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-          Inicio</NuxtLink>
-        <NuxtLink to="/calcular"
-          class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-          Calcular</NuxtLink>
-        <NuxtLink to="/acerca"
-          class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-          Acerca</NuxtLink>
+        <DisclosureButton class="text-left">
+          <NuxtLink to="/"
+            class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+            Inicio</NuxtLink>
+        </DisclosureButton>
+        <DisclosureButton class="text-left">
+          <NuxtLink to="/calcular"
+            class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+            Calcular</NuxtLink>
+        </DisclosureButton>
+        <DisclosureButton class="text-left">
+          <NuxtLink to="/acerca"
+            class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+            Acerca</NuxtLink>
+        </DisclosureButton>
       </div>
       <div class="pt-4 pb-3 border-t border-gray-200">
         <div class="px-4">
@@ -93,17 +100,23 @@ const storeUsers = useUsers();
               <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
             </svg> Cuenta</p>
         </div>
-        <div class="mt-3 space-y-1">
-          <NuxtLink href="/registrarse"
-            class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">
-            Registrarse</NuxtLink>
-          <NuxtLink href="/iniciar"
-            class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Iniciar
-            sesión
-          </NuxtLink>
-          <NuxtLink href="#" @click="() => { storeUsers.isLogged = false }"
-            class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Salir
-          </NuxtLink>
+        <div class="mt-3 space-y-1 flex flex-col">
+          <DisclosureButton class="text-left">
+            <NuxtLink href="/registrarse"
+              class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">
+              Registrarse</NuxtLink>
+          </DisclosureButton>
+          <DisclosureButton class="text-left">
+            <NuxtLink href="/iniciar"
+              class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Iniciar
+              sesión
+            </NuxtLink>
+          </DisclosureButton>
+          <DisclosureButton class="text-left">
+            <NuxtLink href="#" @click="() => { storeUsers.isLogged = false }"
+              class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100">Salir
+            </NuxtLink>
+          </DisclosureButton>
         </div>
       </div>
     </DisclosurePanel>
