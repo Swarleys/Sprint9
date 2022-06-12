@@ -54,7 +54,7 @@ const maxHours = 24 - startingHour.value;
 
         <button @click="sendCostDevice" :disabled="!price" class="btn bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md shadow-blue-700">Añadir consumo de producto.</button>
     </div>
-    <p v-if="price" class="mt-5 text-xl self-start">Costaria un total de {{ priceToFixed }}€</p>
+    <p v-if="price" class="pl-4 mt-5 text-xl self-start">Costaria un total de {{ priceToFixed }}€</p>
 </template>
 
 <style scoped>
