@@ -7,7 +7,7 @@ We recommend to look at the [documentation](https://v3.nuxtjs.org).
 Make sure to install the dependencies
 
 ```bash
-yarn install
+pnpm install --shamefully-hoist
 ```
 
 ## Development
@@ -15,7 +15,7 @@ yarn install
 Start the development server on http://localhost:3000
 
 ```bash
-yarn dev
+pnpm run dev -- -o
 ```
 
 ## Production
@@ -23,7 +23,7 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+pnpm run build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
